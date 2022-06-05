@@ -1,38 +1,175 @@
-.App {
+.container{
+  height:100vh;
+  width:100vw;
+  background-image: linear-gradient(to bottom ,white, lightyellow, rgb(153, 153, 88));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  width:15vw;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content{
+  display: flex;
+  /* margin-top:1rem; */
+  height:40vh;
+  width:100vw;
+}
+.left{
+  flex-basis: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left img{
+  height:34vh;
+  padding: 2rem;
+}
+.right{
+  flex-basis: 70%;
+  width:40vw;
+  padding:1rem 3rem;
+
+}
+.right h4{
+  font-size: 12px;
+}
+.right img{
+  width:24vw;
+}
+p{
+  font-size: 0.6rem;
+}
+.heading{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content2{
+  height:30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content2 img{
+  width:54%;
+  height:24vh;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.redline{
+  border-top: 1px solid red;
+  width:95vw;
+  margin-top: 4px;
+}
+.red{
+  border-right: 1px solid red;
+  margin:0 4px;
+}
+.bottom{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.bottom p{
+  margin-top: 1px;
+  display: flex;
+}
+.footer{
+  height:7vh;
+
+  background-color: rgb(235, 79, 79);
+  width:98vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   color: white;
+  font-weight: 500;
 }
-
-.App-link {
-  color: #61dafb;
+.a1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:600px){
+  .logo img{
+    width:27vw;
   }
-  to {
-    transform: rotate(360deg);
+  .left img{
+    height:30vh;
+    padding: 0rem;
+  }
+  
+  .right h4{
+    font-size: 8px;
+
+  }
+  p{
+    font-size: 5px;
+  }
+  .right img{
+    width:39vw;
+  }
+  .a1{
+    font-size: 6px;
+  }
+  .content2 img{
+    width:32vh;
+    height:30vh;
+  }
+  .bottom p{
+    /* flex-wrap: nowrap; */
+    font-size: 4px;
+    
+  }
+  .bottom h6{
+    margin: 2px;
+  }
+  .bottom{
+    padding: 2px;
+  }
+  .red{
+    margin-left:2px;
+  }
+}
+@media (max-width:90px){
+  .logo img {
+     width:40vw;
+  }
+  .footer{
+    margin-top: 10px;
+  }
+  .right img{
+    width:60vw;
+  }
+}
+@media (max-width:1040px){
+  .right img{
+    width:40vw;
+  }
+  .content2{
+    margin-top: 6px;
+  }
+  .content2 img{
+    width:38%;
+    height:30vh;
+  }
+  p{
+    font-size: 9px;
+  }
+  .bottom h6{
+    margin: 10px;
+  }
+  .bottom p{
+    margin: 0;
+    padding: 4px;
+  }
+  .footer{
+    margin-top: 22px;
   }
 }
