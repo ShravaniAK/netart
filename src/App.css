@@ -137,7 +137,7 @@ p{
     margin-left:2px;
   }
 }
-@media (max-width:90px){
+@media (max-width:900px){
   .logo img {
      width:40vw;
   }
