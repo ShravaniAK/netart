@@ -33,7 +33,7 @@
 }
 .right{
   flex-basis: 70%;
-  width:40vw;
+  /* width:40vw; */
   padding:1rem 3rem;
 
 }
@@ -96,12 +96,12 @@ p{
   align-items: center;
   
 }
-@media (max-width:600px){
+@media (max-width:610px){
   .logo img{
     width:27vw;
   }
   .left img{
-    height:30vh;
+    height:25vh;
     padding: 0rem;
   }
   
@@ -109,8 +109,12 @@ p{
     font-size: 8px;
 
   }
-  p{
-    font-size: 5px;
+  .content p{
+    font-size: 7px;
+  }
+  .content2 p
+  {
+    font-size: 9px;
   }
   .right img{
     width:39vw;
@@ -119,7 +123,7 @@ p{
     font-size: 6px;
   }
   .content2 img{
-    width:32vh;
+    width:52vw;
     height:30vh;
   }
   .bottom p{
@@ -133,6 +137,7 @@ p{
   .bottom{
     padding: 2px;
   }
+  
   .red{
     margin-left:2px;
   }
@@ -144,6 +149,7 @@ p{
   .footer{
     margin-top: 10px;
   }
+  
   .right img{
     width:60vw;
   }
